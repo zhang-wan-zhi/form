@@ -1,0 +1,430 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>应聘登记表</title>
+    <link rel="stylesheet" href="./css/mobileSelect.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        .titleDiv {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            height: 1rem;
+            width: 100%;
+            background: #6c96bc;
+            font-size: 0.4rem;
+            color: #fff;
+            margin-bottom: 0.3rem;
+        }
+
+        .titleDiv div {
+            width: 100%;
+            text-align: center;
+        }
+        form {
+            margin: 0.1rem;
+            font-family: 'Microsoft Yahei', Helvetica, sans-serif;
+        }
+        form input {
+            width: 100%;
+            height: 0.4rem;
+            padding: 0.1rem 0 0.3rem 0.1rem;
+            font-size: 0.3rem;
+            outline-style: none;
+            border: none;
+            border-bottom: 1px solid #f2f2f2;
+            margin: 0.2rem 0;
+            
+        }
+        form textarea {
+            width: 100%;
+            height: 2rem;
+            padding: 0.1rem 0;
+            font-size: 0.3rem;
+            outline-style: none;
+            border: none;
+            border-bottom: 1px solid #f2f2f2;
+            margin: 0.2rem 0;
+        }
+
+        form input::-webkit-input-placeholder,form textarea::-webkit-input-placeholder {
+            /* placeholder颜色 */
+            color: #bcbcbe;
+            /* placeholder字体大小 */
+            font-size: 0.3rem;
+            
+        }
+        
+
+        form b {
+            font-size: 0.3rem;
+            color: #2d2d2d;
+        }
+
+        form table .tableInput {
+            width: 90%;
+            height: 0.3rem;
+            margin: 0;
+            border: none;
+        }
+
+        .trigger {
+            width: 95%;
+            border: 1px solid #dadada;
+            text-align: center;
+            padding: 0.1rem ;
+            font-size: 0.3rem;
+            border-radius: 3px;
+
+        }
+
+        .pick {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <script src="./js/auto-size.js"></script>
+</head>
+
+<body>
+    <div class="titleDiv">
+        <div>xxxxx有限公司</div>
+        <div style="font-size: 0.3rem;">应聘登记表</div>
+    </div>
+    <!--mobileSelect.js-->
+    <form action="" style="font-size: 0.3rem;">
+        <b style="color: red;">*</b><b>应聘岗位</b>
+        <input type="text" required="required" placeholder="请输入">
+
+        <b style="color: red;">*</b><b>填表日期</b>
+        <div class="pick">
+            <input type="text" readonly="readonly" id="trigger1" class="trigger" value="请选择 ﹀" required="required">
+        </div>
+
+        <b style="color: red;">*</b><b>姓名</b>
+        <input type="text" required="required" placeholder="请输入">
+
+        <b style="color: red;">*</b><b>性别</b>
+        <div class="pick">
+            <input type="text" readonly="readonly" id="trigger3" class="trigger" value="请选择 ﹀" required="required">
+        </div>
+
+        <b style="color: red;">*</b><b>出生日期</b>
+        <div class="pick">
+            <input type="text" readonly="readonly" id="trigger4" class="trigger" value="请选择 ﹀" required="required">
+        </div>
+
+        <b style="color: red;">*</b><b>民族</b>
+        <input type="text" required="required" placeholder="请输入">
+
+        <b style="color: red;">*</b><b>政治面貌</b>
+        <input type="text" required="required" placeholder="请输入">
+
+        <b style="color: red;">*</b><b>婚否</b>
+        <div class="pick">
+            <input type="text" readonly="readonly" id="trigger5" class="trigger" value="请选择 ﹀">
+        </div>
+
+        <b style="color: red;">*</b><b>健康状况</b>
+        <input type="text" required="required" placeholder="请输入">
+
+        <b style="color: red;">*</b><b>籍贯（省、市）</b>
+        <input type="text" required="required" placeholder="请输入">
+
+        <b style="color: red;">*</b><b>联系方式</b>
+        <input type="text" required="required" placeholder="请输入">
+
+        <b style="color: red;">*</b><b>电子邮箱</b>
+        <input type="text" required="required" placeholder="请输入">
+
+        <b style="color: red;">*</b><b>学历</b>
+        <input type="text" required="required" placeholder="请输入">
+
+        <b style="color: red;">*</b><b>现住地</b>
+        <input type="text" required="required" placeholder="请输入">
+
+        <b style="color: red;">*</b><b>目前是否在职</b>
+        <input type="text" required="required" placeholder="请输入">
+
+        <b style="color: red;">*</b><b>预计到岗时间</b>
+        <div class="pick">
+            <input type="text" readonly="readonly" id="trigger6" class="trigger" value="请选择 ﹀">
+        </div>
+
+        <b style="color: red;">*</b><b>期望薪资</b>
+        <input type="text" required="required" placeholder="请输入">
+
+        <b style="color: red;">*</b><b>外语水平</b>
+        <input type="text" required="required" placeholder="请输入">
+
+        <b style="color: red;">*</b><b>计算机水平</b>
+        <input type="text" required="required" placeholder="请输入">
+
+        <b style="color: red;">*</b><b>教育经历（至少完整填写一行）</b>
+        <table class="custom_tb">
+            <tr style="font-size: 0.3rem">
+                <th>时间</th>
+                <th>毕业院校</th>
+                <th>专业</th>
+                <th>详细情况</th>
+            </tr>
+            <tr>
+                <td><input type="text" class="tableInput"></td>
+                <td><input type="text" class="tableInput"></td>
+                <td><input type="text" class="tableInput"></td>
+                <td><input type="text" class="tableInput"></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="tableInput"></td>
+                <td><input type="text" class="tableInput"></td>
+                <td><input type="text" class="tableInput"></td>
+                <td><input type="text" class="tableInput"></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="tableInput"></td>
+                <td><input type="text" class="tableInput"></td>
+                <td><input type="text" class="tableInput"></td>
+                <td><input type="text" class="tableInput"></td>
+            </tr>
+
+
+        </table>
+
+        <b style="color: red;">*</b><b>工作经历（至少完整填写一行，没有则写<span style="color: red;">`无`</span>）</b>
+        <table class="custom_tb">
+            <tr style="font-size: 0.3rem">
+                <th>时间</th>
+                <th>公司名称</th>
+                <th>职务</th>
+                <th>职责</th>
+            </tr>
+            <tr>
+                <td><input type="text" class="tableInput"></td>
+                <td><input type="text" class="tableInput"></td>
+                <td><input type="text" class="tableInput"></td>
+                <td><input type="text" class="tableInput"></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="tableInput"></td>
+                <td><input type="text" class="tableInput"></td>
+                <td><input type="text" class="tableInput"></td>
+                <td><input type="text" class="tableInput"></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="tableInput"></td>
+                <td><input type="text" class="tableInput"></td>
+                <td><input type="text" class="tableInput"></td>
+                <td><input type="text" class="tableInput"></td>
+            </tr>
+
+
+        </table>
+
+        <b>个人荣誉</b>
+        <input type="text" placeholder="请输入">
+
+        <b>兴趣特长</b>
+        <input type="text" placeholder="请输入">
+
+        <b style="color: red;">*</b><b>自我评价</b>
+        
+        <textarea name="Text1" cols="40" rows="5" placeholder="请输入"></textarea>
+
+        <input type="submit" value="提  交" style="background: #6c96bc;color: #fff;height: 0.5rem;line-height: 0.3rem;">
+    </form>
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="./js/mobileSelect.js"></script>
+    <script>
+        var years = [];
+        var month = [];
+        var day = [];
+        var myDate = new Date();
+        myDate.getFullYear();    //获取完整的年份(4位,1970-????)
+        myDate.getMonth();       //获取当前月份(0-11,0代表1月)
+        myDate.getDate();
+        var _data = [];
+        for (i = 0; i < myDate.getFullYear() - 1980; i++) {
+            //年
+            var obj = {};
+            var yer = 1980 + i + 1;
+            obj.value = 1980 + i + 1;
+            var _data2 = [];
+            for (n = 0; n < 12; n++) {
+                //月
+                var obj2 = {};
+                if (n < 9) {
+                    obj2.value = '0' + (n + 1);
+                } else {
+                    obj2.value = n + 1;
+                }
+                var _data3 = [];
+                if (n == 1) {
+                    var cond1 = yer % 4 == 0;  //条件1：年份必须要能被4整除
+                    var cond2 = yer % 100 != 0;  //条件2：年份不能是整百数
+                    var cond3 = yer % 400 == 0;
+                    var cond = cond1 && cond2 || cond3;
+                    //闰年
+                    if (cond) {
+                        for (y = 0; y < 29; y++) {
+                            //日
+                            var obj3 = {};
+                            if (y < 9) {
+                                obj3.value = '0' + (y + 1);
+                            } else {
+                                obj3.value = y + 1;
+                            }
+                            _data3.push(obj3)
+                        }
+                    } else {
+                        for (y = 0; y < 28; y++) {
+                            //日
+                            var obj3 = {};
+                            if (y < 9) {
+                                obj3.value = '0' + (y + 1);
+                            } else {
+                                obj3.value = y + 1;
+                            }
+                            _data3.push(obj3)
+                        }
+                    }
+                } else if (n == 0 || n == 2 || n == 4 || n == 6 || n == 7 || n == 9 || n == 11) {
+                    for (y = 0; y < 31; y++) {
+                        //日
+                        var obj3 = {};
+                        if (y < 9) {
+                            obj3.value = '0' + (y + 1);
+                        } else {
+                            obj3.value = y + 1;
+                        }
+                        _data3.push(obj3)
+                    }
+                } else {
+                    for (y = 0; y < 30; y++) {
+                        //日
+                        var obj3 = {};
+                        if (y < 9) {
+                            obj3.value = '0' + (y + 1);
+                        } else {
+                            obj3.value = y + 1;
+                        }
+                        _data3.push(obj3)
+                    }
+                }
+                obj2.childs = _data3;
+                _data2.push(obj2);
+            }
+            obj.childs = _data2;
+            _data.push(obj)
+        }
+        var mobileSelect1 = new MobileSelect({
+            trigger: '#trigger1',
+            title: '',
+            wheels: [
+                { data: _data }
+            ],
+            transitionEnd: function (indexArr, data) {
+                console.log(data);
+            },
+            callback: function (indexArr, data) {
+                console.log(data);
+                $("#trigger1").val(data[0].value + '-' + data[1].value + '-' + data[2].value)
+            }
+        });
+
+        var mobileSelect1 = new MobileSelect({
+            trigger: '#trigger4',
+            title: '',
+            wheels: [
+                { data: _data }
+            ],
+            transitionEnd: function (indexArr, data) {
+                console.log(data);
+            },
+            callback: function (indexArr, data) {
+                console.log(data);
+                $("#trigger4").val(data[0].value + '-' + data[1].value + '-' + data[2].value)
+            }
+        });
+
+        var mobileSelect1 = new MobileSelect({
+            trigger: '#trigger6',
+            title: '',
+            wheels: [
+                { data: _data }
+            ],
+            transitionEnd: function (indexArr, data) {
+                console.log(data);
+            },
+            callback: function (indexArr, data) {
+                console.log(data);
+                $("#trigger6").val(data[0].value + '-' + data[1].value + '-' + data[2].value)
+            }
+        });
+        // 性别选择
+        var mobileSelect1 = new MobileSelect({
+            trigger: '#trigger3',
+            title: '',
+            wheels: [
+                {
+                    data: [
+                        { id: '1', value: '男' },
+                        { id: '2', value: '女' },
+                    ]
+                }
+            ],
+            transitionEnd: function (indexArr, data) {
+                console.log(data);
+            },
+            callback: function (indexArr, data) {
+                console.log(data);
+                $("#trigger3").val(data[0].value)
+            }
+        });
+        // 婚否
+        var mobileSelect1 = new MobileSelect({
+            trigger: '#trigger5',
+            title: '',
+            wheels: [
+                {
+                    data: [
+                        { id: '1', value: '是' },
+                        { id: '2', value: '否' },
+                    ]
+                }
+            ],
+            transitionEnd: function (indexArr, data) {
+                console.log(data);
+            },
+            callback: function (indexArr, data) {
+                console.log(data);
+                $("#trigger5").val(data[0].value)
+            }
+        });
+
+        $(function () {
+            var $txt = $('.txt');
+            (function () {
+                var v = parseInt($txt.html());
+                var v2 = Math.round(v);
+                if (v2 < 35) {
+                    $txt.html(++v2 + ".23");
+                    setTimeout(arguments.callee, 10); // 每100毫秒增长一次
+                }
+            })();
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
